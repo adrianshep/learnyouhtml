@@ -1,7 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lists</title>
+  </head>
+  <body>
+
+    <ol reversed start="100" type="i">
+      <li>eins</li>
+      <li>zwei</li>
+      <li>drei</li>
+    </ol>
+
+    <ul type="circle">
+      <li>strange</li>
+      <li>charm</li>
+      <li>top</li>
+    </ul>
+
+    <dl>
+      <dt>Arrowmink Senior High School</dt>
+      <dd>A 10th through 12th grade high school in New Meeting, PA. Opened in 1951.</dd>
+
+      <dt>Rogerstowne-Fury High School</dt>
+      <dd>A 9th through 12th grade high school in Fury, NY. Opened in 1977.</dd>
+    </dl>
+
+  </body>
+</html>
 
 
 
 <!--
+
+Here's the official solution in case you want to compare notes:
+
+ ```html <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lists</title>
+  </head>
+  <body>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <dl>
+      <dt>Term 1</dt>
+      <dd>Definition 1</dd>
+      <dt>Term 2</dt>
+      <dd>Definition 2</dd>
+    </dl>
+  </body>
+</html>
+
+
+    # Great!
+
+    Nice to see you're get how to write lists in HTML.
+
+    Additionally, there is no limitation to the depth and alternation of nested lists defined with the `<ol>` and `<ul>` elements. This markup will work as well:
+
+    ```html
+    <ol>
+      <li>first item</li>
+      <li>second item  <!- closing </li> tag not here! ->
+        <ul>
+          <li>second item first subitem</li>
+          <li>second item second subitem</li>
+          <li>second item third subitem</li>
+        </ul>
+      </li>            <!- Here's the closing </li> tag ->
+      <li>third item</li>
+    </ol>
+
+ There are cases when it's not enough to summarize information in a simple
+ list, that's where tables come. In following exercise we're going to take
+ a look at tables in HTML.
 
 LISTS (Exercise 6 of 11)
 
@@ -109,7 +192,7 @@ LISTS (Exercise 6 of 11)
          creating web pages and web applications.
        </dd>
 
-       <!- Other terms and descriptions ->  
+       <!- Other terms and descriptions ->
      </dl>
 
   Also, you can write multiple terms with single definition, single term
